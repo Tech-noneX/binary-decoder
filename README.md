@@ -1,26 +1,43 @@
-📄 Description for your decoder GitHub repo
-🧠 Binary Decoder
+# Binary Decoder
 
-This is a simple binary decoder written in Python.
+A small Python practice project that converts binary input into decimal form.
 
-🔹 Currently, it takes a single binary number as input and converts it to its decimal form.
-🔹 The goal is to expand this project into a powerful binary interpreter that can handle any format of binary input — including:
+The current script uses a hard-coded list of bits, builds the matching powers of two, and prints the decimal result.
 
-Strings ("01001000")
+## Current Features
 
-Lists of bits ([0, 1, 0, 0, 1, 0, 0, 0])
+- Converts a list of `0` and `1` values into a decimal number
+- Checks that the list contains only valid binary digits
+- Shows the core conversion logic step by step in `simple_binary_decoder.py`
 
-Space-separated binaries ("01001000 01100101")
+## Project Files
 
-Lists of binary blocks ([[0,1,0,0,1,0,0,0], [0,1,1,0,0,1,0,1]])
+- `simple_binary_decoder/simple_binary_decoder.py` - main decoder script
+- `requirements.txt` - Python packages currently recorded for the environment
 
-🔸 Future features will include:
+## How To Run
 
-Input format detection
+From the project folder:
 
-ASCII character decoding (e.g. binary → "Honzik")
+```bash
+python simple_binary_decoder/simple_binary_decoder.py
+```
 
-Full message decoding from binary text
+The script currently decodes this value:
 
-This repo is part of a larger learning journey and will continue evolving over time.
+```python
+binary = [1, 0, 0, 1, 1, 0, 0, 1]
+```
 
+To test another binary number, edit the `binary` list in `simple_binary_decoder.py`.
+
+## Future Ideas
+
+- Accept binary strings, such as `01001000`
+- Accept space-separated binary blocks, such as `01001000 01100101`
+- Decode binary into ASCII text
+- Add functions and tests so the decoder is easier to reuse
+
+## Notes
+
+This is part of a Python learning journey, so the project is intentionally small and will grow over time.
